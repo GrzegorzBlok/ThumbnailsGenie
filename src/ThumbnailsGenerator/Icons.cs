@@ -6,12 +6,12 @@ using ThumbnailsGenerator.Configuration;
 
 namespace ThumbnailsGenerator
 {
-    internal static class Icons
+    internal class Icons
     {
         private static string IconsDirectory = "icons";
         private const string BLANK = "_blank";
 
-        static Icons()
+        public Icons()
         {
             ThumbnailsConfigurationSection section = ConfigurationManager.GetSection("ThumbnailsGenerator") as ThumbnailsConfigurationSection;
             if(section != null)
@@ -20,10 +20,10 @@ namespace ThumbnailsGenerator
             }
         }
 
-        static Dictionary<Thumbnails.Size, Dictionary<string, byte[]>> IconsData
+        Dictionary<Thumbnails.Size, Dictionary<string, byte[]>> IconsData
             = new Dictionary<Thumbnails.Size, Dictionary<string, byte[]>>(Enum.GetNames(typeof(Thumbnails.Size)).Length);
 
-        private static void LoadIcons(Thumbnails.Size size)
+        private void LoadIcons(Thumbnails.Size size)
         {
             var iconsFiles = Directory.GetFiles(Path.Combine(IconsDirectory, size.ToString()), 
                 "*.png", SearchOption.TopDirectoryOnly);
@@ -38,7 +38,7 @@ namespace ThumbnailsGenerator
                 iconsFilesMapping[Path.GetFileNameWithoutExtension(fileName)] = File.ReadAllBytes(fileName);
             }
 
-            // check correctnes
+            // check correctness
             if(!iconsFilesMapping.ContainsKey(BLANK))
             {
                 throw new Exception();
@@ -48,7 +48,7 @@ namespace ThumbnailsGenerator
             IconsData[size] = iconsFilesMapping;
         }
 
-        public static byte[] GetIcon(string type, Thumbnails.Size size)
+        public byte[] GetIcon(string type, Thumbnails.Size size)
         {
             Dictionary<string, byte[]> iconsDictionary;
             if (!IconsData.TryGetValue(size, out iconsDictionary))

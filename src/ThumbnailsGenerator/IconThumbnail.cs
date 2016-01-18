@@ -10,18 +10,32 @@ namespace ThumbnailsGenerator
 {
     public class IconThumbnail
     {
-        public static byte[] GetThumbnail(string mimeType, Thumbnails.Size pxSize = Thumbnails.Size.Px32)
+        private Icons iconsStorage = new Icons();
+
+        public byte[] GetThumbnailForMimeType(string mimeType, Thumbnails.Size pxSize = Thumbnails.Size.Px32)
         {
             try
             {
                 var extension = MimeTypeMap.GetExtension(mimeType);
  
-                return Icons.GetIcon(extension, pxSize);
+                return iconsStorage.GetIcon(extension, pxSize);
             }
             catch (Exception)
             {
-                return Icons.GetIcon("_blank", pxSize);
+                return iconsStorage.GetIcon("_blank", pxSize);
             }    
+        }
+
+        public byte[] GetThumbnailForExtension(string extension, Thumbnails.Size pxSize = Thumbnails.Size.Px32)
+        {
+            try
+            {
+                return iconsStorage.GetIcon(extension, pxSize);
+            }
+            catch (Exception)
+            {
+                return iconsStorage.GetIcon("_blank", pxSize);
+            }
         }
     }
 }

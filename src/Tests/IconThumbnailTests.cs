@@ -14,15 +14,15 @@ namespace Tests
         [Fact]
         public void GetThumbnailForImageReturnsProperIcon()
         {
+            var target = new IconThumbnail();
+
             // Act
-            byte[] pngIcon = IconThumbnail.GetThumbnail("image/png");
-            byte[] jpegIcon = IconThumbnail.GetThumbnail("image/jpeg");
-            byte[] bmpIcon = IconThumbnail.GetThumbnail("image/bmp");
-            byte[] tiffIcon = IconThumbnail.GetThumbnail("image/tiff");
-            //byte[] epsIcon = IconThumbnail.GetThumbnail("image/eps");
-            //byte[] tgaIcon = IconThumbnail.GetThumbnail("image/tga");
-            byte[] gifIcon = IconThumbnail.GetThumbnail("image/gif");
-            byte[] blankIcon = IconThumbnail.GetThumbnail("blank");
+            byte[] pngIcon = target.GetThumbnailForMimeType("image/png");
+            byte[] jpegIcon = target.GetThumbnailForMimeType("image/jpeg");
+            byte[] bmpIcon = target.GetThumbnailForMimeType("image/bmp");
+            byte[] tiffIcon = target.GetThumbnailForMimeType("image/tiff");
+            byte[] gifIcon = target.GetThumbnailForMimeType("image/gif");
+            byte[] blankIcon = target.GetThumbnailForMimeType("blank");
 
             // Assert
             CheckImageIcon(blankIcon);
@@ -30,8 +30,6 @@ namespace Tests
             CheckImageIcon(jpegIcon);
             CheckImageIcon(bmpIcon);
             CheckImageIcon(tiffIcon);
-            //CheckImageIcon(epsIcon);
-            //CheckImageIcon(tgaIcon);
             CheckImageIcon(gifIcon);
         }
 
