@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ThumbnailsGenerator
+namespace ThumbnailsGenie
 {
     public class Thumbnails
     {

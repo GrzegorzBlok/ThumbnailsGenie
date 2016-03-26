@@ -1,6 +1,6 @@
 ﻿using System.Configuration;
 
-namespace ThumbnailsGenerator.Configuration
+namespace ThumbnailsGenie.Configuration
 {
     public class ThumbnailsConfigurationSection : ConfigurationSection
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using MimeTypes;
 
-namespace ThumbnailsGenerator
+namespace ThumbnailsGenie
 {
     public class IconThumbnail
     {

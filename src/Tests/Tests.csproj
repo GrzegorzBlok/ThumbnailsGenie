@@ -68,7 +68,7 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\ThumbnailsGenerator\ThumbnailsGenerator.csproj">
+    <ProjectReference Include="..\ThumbnailsGenie\ThumbnailsGenie.csproj">
       <Project>{9e9be10e-0e1f-4b4d-b4f1-afa51154aa96}</Project>
       <Name>ThumbnailsGenerator</Name>
     </ProjectReference>

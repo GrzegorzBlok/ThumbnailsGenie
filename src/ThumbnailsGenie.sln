@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.24720.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThumbnailsGenerator", "ThumbnailsGenerator\ThumbnailsGenerator.csproj", "{9E9BE10E-0E1F-4B4D-B4F1-AFA51154AA96}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ThumbnailsGenie", "ThumbnailsGenie\ThumbnailsGenie.csproj", "{9E9BE10E-0E1F-4B4D-B4F1-AFA51154AA96}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tests", "Tests\Tests.csproj", "{8214A2C2-41B2-4810-8BC1-DF9DC63E17B5}"
 EndProject

@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Configuration;
-using ThumbnailsGenerator.Configuration;
+using ThumbnailsGenie.Configuration;
 
-namespace ThumbnailsGenerator
+namespace ThumbnailsGenie
 {
     internal class Icons
     {
@@ -13,7 +13,7 @@ namespace ThumbnailsGenerator
 
         public Icons()
         {
-            ThumbnailsConfigurationSection section = ConfigurationManager.GetSection("ThumbnailsGenerator") as ThumbnailsConfigurationSection;
+            ThumbnailsConfigurationSection section = ConfigurationManager.GetSection("ThumbnailsGenie") as ThumbnailsConfigurationSection;
             if(section != null)
             {
                 IconsDirectory = section.IconsDirectory.value;
