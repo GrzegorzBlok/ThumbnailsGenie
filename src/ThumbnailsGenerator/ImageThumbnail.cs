@@ -12,21 +12,21 @@ namespace ThumbnailsGenerator
             ImgThumbnail = GenerateThumbnail(Image.FromStream(image), thumbnailMaxPxSize);
         }
 
-        private Image ImgThumbnail { get; set; }
+        protected Image ImgThumbnail { get; set; }
 
         public void SaveToStream(Stream stream)
         {
             ImgThumbnail.Save(stream, ImageFormat.Jpeg);
         }
 
-        private static Image GenerateThumbnail(Image img, Thumbnails.Size maxPxSize)
+        protected static Image GenerateThumbnail(Image img, Thumbnails.Size maxPxSize)
         {
             Size thumbnailSize = GetThumbnailSize(img, Thumbnails.Size.Px32);
             return img.GetThumbnailImage(thumbnailSize.Width,
                 thumbnailSize.Height, null, IntPtr.Zero);
         }
- 
-        private static Size GetThumbnailSize(Image original, Thumbnails.Size maxPxSize)
+
+        protected static Size GetThumbnailSize(Image original, Thumbnails.Size maxPxSize)
         {
             double factor;
             if (original.Width > original.Height)

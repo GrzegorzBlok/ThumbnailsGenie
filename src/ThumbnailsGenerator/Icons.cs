@@ -25,11 +25,16 @@ namespace ThumbnailsGenerator
 
         private void LoadIcons(Thumbnails.Size size)
         {
-            var iconsFiles = Directory.GetFiles(Path.Combine(IconsDirectory, size.ToString()), 
-                "*.png", SearchOption.TopDirectoryOnly);
+            var iconsDirectory = Path.Combine(IconsDirectory, size.ToString());
+            if(!Directory.Exists(iconsDirectory))
+            {
+                throw new DirectoryNotFoundException($"Icons directory {iconsDirectory} doesn't exist");
+            }
+
+            var iconsFiles = Directory.GetFiles(iconsDirectory, "*.png", SearchOption.TopDirectoryOnly);
             if(iconsFiles.Length < 2)
             {
-                throw new Exception();
+                throw new FileNotFoundException($"Only {iconsFiles.Length} icons found in icons directory {iconsDirectory}");
             }
 
             var iconsFilesMapping = new Dictionary<string, byte[]>(iconsFiles.Length);
@@ -41,10 +46,9 @@ namespace ThumbnailsGenerator
             // check correctness
             if(!iconsFilesMapping.ContainsKey(BLANK))
             {
-                throw new Exception();
+                throw new FileNotFoundException($"No {BLANK} icon found in {iconsDirectory}");
             }
-
-            // thread synchronization?
+ 
             IconsData[size] = iconsFilesMapping;
         }
 

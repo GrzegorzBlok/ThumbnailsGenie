@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>ThumbnailsGenerator</id>
+        <version>1.0.0</version>
+        <authors>Grzegorz Blok</authors>
+        <owners>Grzegorz Blok</owners>
+        <projectUrl>https://github.com/GrzegorzBlok/ThumbnailsGenerator</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>Creates thumbnails from images and several other file types.</description>
+        <dependencies>
+            <dependency id="MediaTypeMap" version="2.1.0.0" />
+        </dependencies>
+    </metadata>
+    <files>
+        <file src="..\icons\**\*.*" target="icons" />
+        <file src="..\src\ThumbnailsGenerator\bin\Release\ThumbnailsGenerator.dll" target="lib\ThumbnailsGenerator.dll" />
+    </files>
+</package>
