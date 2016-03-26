@@ -1,1 +1,1 @@
-# ThumbnailsGenerator
+# ThumbnailsGenie
