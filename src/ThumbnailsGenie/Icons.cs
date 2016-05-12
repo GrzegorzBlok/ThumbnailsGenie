@@ -2,69 +2,31 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Configuration;
-using ThumbnailsGenie.Configuration;
+using ThumbnailsGenie.Resources;
 
 namespace ThumbnailsGenie
 {
     internal class Icons
     {
-        private static string IconsDirectory = "icons";
         private const string BLANK = "_blank";
 
         public Icons()
         {
-            ThumbnailsConfigurationSection section = ConfigurationManager.GetSection("ThumbnailsGenie") as ThumbnailsConfigurationSection;
-            if(section != null)
-            {
-                IconsDirectory = section.IconsDirectory.value;
-            }
+            IconsData[Thumbnails.Size.Px16] = new global::System.Resources.ResourceManager("ThumbnailsGenie.Resources.Px16", typeof(Px16).Assembly);
+            IconsData[Thumbnails.Size.Px32] = new global::System.Resources.ResourceManager("ThumbnailsGenie.Resources.Px32", typeof(Px32).Assembly);
+            IconsData[Thumbnails.Size.Px48] = new global::System.Resources.ResourceManager("ThumbnailsGenie.Resources.Px48", typeof(Px48).Assembly);
+            IconsData[Thumbnails.Size.Px512] = new global::System.Resources.ResourceManager("ThumbnailsGenie.Resources.Px512", typeof(Px512).Assembly);
         }
 
-        Dictionary<Thumbnails.Size, Dictionary<string, byte[]>> IconsData
-            = new Dictionary<Thumbnails.Size, Dictionary<string, byte[]>>(Enum.GetNames(typeof(Thumbnails.Size)).Length);
+        Dictionary<Thumbnails.Size, System.Resources.ResourceManager> IconsData = new Dictionary<Thumbnails.Size, System.Resources.ResourceManager>(Enum.GetNames(typeof(Thumbnails.Size)).Length);
 
-        private void LoadIcons(Thumbnails.Size size)
+        public System.Drawing.Bitmap GetIcon(string type, Thumbnails.Size size)
         {
-            var iconsDirectory = Path.Combine(IconsDirectory, size.ToString());
-            if(!Directory.Exists(iconsDirectory))
-            {
-                throw new DirectoryNotFoundException($"Icons directory {iconsDirectory} doesn't exist");
-            }
+            var icon = IconsData[size].GetObject(type) as System.Drawing.Bitmap;
 
-            var iconsFiles = Directory.GetFiles(iconsDirectory, "*.png", SearchOption.TopDirectoryOnly);
-            if(iconsFiles.Length < 2)
+            if (icon == null)
             {
-                throw new FileNotFoundException($"Only {iconsFiles.Length} icons found in icons directory {iconsDirectory}");
-            }
-
-            var iconsFilesMapping = new Dictionary<string, byte[]>(iconsFiles.Length);
-            foreach(var fileName in iconsFiles)
-            {
-                iconsFilesMapping[Path.GetFileNameWithoutExtension(fileName)] = File.ReadAllBytes(fileName);
-            }
-
-            // check correctness
-            if(!iconsFilesMapping.ContainsKey(BLANK))
-            {
-                throw new FileNotFoundException($"No {BLANK} icon found in {iconsDirectory}");
-            }
- 
-            IconsData[size] = iconsFilesMapping;
-        }
-
-        public byte[] GetIcon(string type, Thumbnails.Size size)
-        {
-            Dictionary<string, byte[]> iconsDictionary;
-            if (!IconsData.TryGetValue(size, out iconsDictionary))
-            {
-                LoadIcons(size);
-                iconsDictionary = IconsData[size];
-            }
-
-            byte[] icon;
-            if(!iconsDictionary.TryGetValue(type, out icon))
-            {
-                return iconsDictionary[BLANK];
+                return IconsData[size].GetObject(BLANK) as System.Drawing.Bitmap;
             }
 
             return icon;

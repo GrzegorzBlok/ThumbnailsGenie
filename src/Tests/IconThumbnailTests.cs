@@ -12,32 +12,43 @@ namespace Tests
     public class IconThumbnailTests
     {
         [Fact]
-        public void GetThumbnailForImageReturnsProperIcon()
+        public void GetThumbnailForImageReturnsProperIcon_Px32()
+        {
+            GetThumbnailForImageReturnsProperIcon_Px(Thumbnails.Size.Px32);
+        }
+
+        [Fact]
+        public void GetThumbnailForImageReturnsProperIcon_Px512()
+        {
+            GetThumbnailForImageReturnsProperIcon_Px(Thumbnails.Size.Px512);
+        }
+
+        public void GetThumbnailForImageReturnsProperIcon_Px(Thumbnails.Size size)
         {
             var target = new IconThumbnail();
 
             // Act
-            byte[] pngIcon = target.GetThumbnailForMimeType("image/png");
-            byte[] jpegIcon = target.GetThumbnailForMimeType("image/jpeg");
-            byte[] bmpIcon = target.GetThumbnailForMimeType("image/bmp");
-            byte[] tiffIcon = target.GetThumbnailForMimeType("image/tiff");
-            byte[] gifIcon = target.GetThumbnailForMimeType("image/gif");
-            byte[] blankIcon = target.GetThumbnailForMimeType("blank");
+            var pngIcon = target.GetThumbnailForMimeType("image/png", size);
+            var jpegIcon = target.GetThumbnailForMimeType("image/jpeg", size);
+            var bmpIcon = target.GetThumbnailForMimeType("image/bmp", size);
+            var tiffIcon = target.GetThumbnailForMimeType("image/tiff", size);
+            var gifIcon = target.GetThumbnailForMimeType("image/gif", size);
+            var blankIcon = target.GetThumbnailForMimeType("blank", size);
 
             // Assert
-            CheckImageIcon(blankIcon);
-            CheckImageIcon(pngIcon);
-            CheckImageIcon(jpegIcon);
-            CheckImageIcon(bmpIcon);
-            CheckImageIcon(tiffIcon);
-            CheckImageIcon(gifIcon);
+            CheckImageIcon(blankIcon, (int)size);
+            CheckImageIcon(pngIcon, (int)size);
+            CheckImageIcon(jpegIcon, (int)size);
+            CheckImageIcon(bmpIcon, (int)size);
+            CheckImageIcon(tiffIcon, (int)size);
+            CheckImageIcon(gifIcon, (int)size);
         }
 
-        static void CheckImageIcon(byte[] icon)
+        static void CheckImageIcon(System.Drawing.Bitmap icon, int size)
         {
             Assert.NotNull(icon);
-            var ms = new System.IO.MemoryStream(icon);
-            var img = Image.FromStream(ms, true, true);
+            Assert.Equal(size, icon.Height);
+            Assert.Equal(size, icon.Width);
         }
     }
 }

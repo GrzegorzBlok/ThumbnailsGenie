@@ -56,20 +56,307 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Resources\Px16.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Px16.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Px32.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Px32.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Px48.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Px48.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Px512.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Px512.resx</DependentUpon>
+    </Compile>
     <Compile Include="Thumbnails.cs" />
-    <Compile Include="ThumbnailsConfigurationSection.cs" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Px16.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Px16.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Px32.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Px32.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Px48.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Px48.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Px512.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Px512.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Resources\" />
-  </ItemGroup>
-  <ItemGroup>
+    <None Include="icons\README.md" />
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="icons\Px16\aac.png" />
+    <Content Include="icons\Px16\ai.png" />
+    <Content Include="icons\Px16\aiff.png" />
+    <Content Include="icons\Px16\avi.png" />
+    <Content Include="icons\Px16\bmp.png" />
+    <Content Include="icons\Px16\c.png" />
+    <Content Include="icons\Px16\cpp.png" />
+    <Content Include="icons\Px16\css.png" />
+    <Content Include="icons\Px16\dat.png" />
+    <Content Include="icons\Px16\dmg.png" />
+    <Content Include="icons\Px16\doc.png" />
+    <Content Include="icons\Px16\dotx.png" />
+    <Content Include="icons\Px16\dwg.png" />
+    <Content Include="icons\Px16\dxf.png" />
+    <Content Include="icons\Px16\eps.png" />
+    <Content Include="icons\Px16\exe.png" />
+    <Content Include="icons\Px16\flv.png" />
+    <Content Include="icons\Px16\gif.png" />
+    <Content Include="icons\Px16\h.png" />
+    <Content Include="icons\Px16\hpp.png" />
+    <Content Include="icons\Px16\html.png" />
+    <Content Include="icons\Px16\ics.png" />
+    <Content Include="icons\Px16\iso.png" />
+    <Content Include="icons\Px16\java.png" />
+    <Content Include="icons\Px16\jpg.png" />
+    <Content Include="icons\Px16\js.png" />
+    <Content Include="icons\Px16\key.png" />
+    <Content Include="icons\Px16\less.png" />
+    <Content Include="icons\Px16\mid.png" />
+    <Content Include="icons\Px16\mp3.png" />
+    <Content Include="icons\Px16\mp4.png" />
+    <Content Include="icons\Px16\mpg.png" />
+    <Content Include="icons\Px16\odf.png" />
+    <Content Include="icons\Px16\ods.png" />
+    <Content Include="icons\Px16\odt.png" />
+    <Content Include="icons\Px16\otp.png" />
+    <Content Include="icons\Px16\ots.png" />
+    <Content Include="icons\Px16\ott.png" />
+    <Content Include="icons\Px16\pdf.png" />
+    <Content Include="icons\Px16\php.png" />
+    <Content Include="icons\Px16\png.png" />
+    <Content Include="icons\Px16\ppt.png" />
+    <Content Include="icons\Px16\psd.png" />
+    <Content Include="icons\Px16\py.png" />
+    <Content Include="icons\Px16\qt.png" />
+    <Content Include="icons\Px16\rar.png" />
+    <Content Include="icons\Px16\rb.png" />
+    <Content Include="icons\Px16\rtf.png" />
+    <Content Include="icons\Px16\sass.png" />
+    <Content Include="icons\Px16\scss.png" />
+    <Content Include="icons\Px16\sql.png" />
+    <Content Include="icons\Px16\tga.png" />
+    <Content Include="icons\Px16\tgz.png" />
+    <Content Include="icons\Px16\tiff.png" />
+    <Content Include="icons\Px16\txt.png" />
+    <Content Include="icons\Px16\wav.png" />
+    <Content Include="icons\Px16\xls.png" />
+    <Content Include="icons\Px16\xlsx.png" />
+    <Content Include="icons\Px16\xml.png" />
+    <Content Include="icons\Px16\yml.png" />
+    <Content Include="icons\Px16\zip.png" />
+    <Content Include="icons\Px16\_blank.png" />
+    <Content Include="icons\Px16\_page.png" />
+    <Content Include="icons\Px32\aac.png" />
+    <Content Include="icons\Px32\ai.png" />
+    <Content Include="icons\Px32\aiff.png" />
+    <Content Include="icons\Px32\avi.png" />
+    <Content Include="icons\Px32\bmp.png" />
+    <Content Include="icons\Px32\c.png" />
+    <Content Include="icons\Px32\cpp.png" />
+    <Content Include="icons\Px32\css.png" />
+    <Content Include="icons\Px32\dat.png" />
+    <Content Include="icons\Px32\dmg.png" />
+    <Content Include="icons\Px32\doc.png" />
+    <Content Include="icons\Px32\dotx.png" />
+    <Content Include="icons\Px32\dwg.png" />
+    <Content Include="icons\Px32\dxf.png" />
+    <Content Include="icons\Px32\eps.png" />
+    <Content Include="icons\Px32\exe.png" />
+    <Content Include="icons\Px32\flv.png" />
+    <Content Include="icons\Px32\gif.png" />
+    <Content Include="icons\Px32\h.png" />
+    <Content Include="icons\Px32\hpp.png" />
+    <Content Include="icons\Px32\html.png" />
+    <Content Include="icons\Px32\ics.png" />
+    <Content Include="icons\Px32\iso.png" />
+    <Content Include="icons\Px32\java.png" />
+    <Content Include="icons\Px32\jpg.png" />
+    <Content Include="icons\Px32\js.png" />
+    <Content Include="icons\Px32\key.png" />
+    <Content Include="icons\Px32\less.png" />
+    <Content Include="icons\Px32\mid.png" />
+    <Content Include="icons\Px32\mp3.png" />
+    <Content Include="icons\Px32\mp4.png" />
+    <Content Include="icons\Px32\mpg.png" />
+    <Content Include="icons\Px32\odf.png" />
+    <Content Include="icons\Px32\ods.png" />
+    <Content Include="icons\Px32\odt.png" />
+    <Content Include="icons\Px32\otp.png" />
+    <Content Include="icons\Px32\ots.png" />
+    <Content Include="icons\Px32\ott.png" />
+    <Content Include="icons\Px32\pdf.png" />
+    <Content Include="icons\Px32\php.png" />
+    <Content Include="icons\Px32\png.png" />
+    <Content Include="icons\Px32\ppt.png" />
+    <Content Include="icons\Px32\psd.png" />
+    <Content Include="icons\Px32\py.png" />
+    <Content Include="icons\Px32\qt.png" />
+    <Content Include="icons\Px32\rar.png" />
+    <Content Include="icons\Px32\rb.png" />
+    <Content Include="icons\Px32\rtf.png" />
+    <Content Include="icons\Px32\sass.png" />
+    <Content Include="icons\Px32\scss.png" />
+    <Content Include="icons\Px32\sql.png" />
+    <Content Include="icons\Px32\tga.png" />
+    <Content Include="icons\Px32\tgz.png" />
+    <Content Include="icons\Px32\tiff.png" />
+    <Content Include="icons\Px32\txt.png" />
+    <Content Include="icons\Px32\wav.png" />
+    <Content Include="icons\Px32\xls.png" />
+    <Content Include="icons\Px32\xlsx.png" />
+    <Content Include="icons\Px32\xml.png" />
+    <Content Include="icons\Px32\yml.png" />
+    <Content Include="icons\Px32\zip.png" />
+    <Content Include="icons\Px32\_blank.png" />
+    <Content Include="icons\Px32\_page.png" />
+    <Content Include="icons\Px48\aac.png" />
+    <Content Include="icons\Px48\ai.png" />
+    <Content Include="icons\Px48\aiff.png" />
+    <Content Include="icons\Px48\avi.png" />
+    <Content Include="icons\Px48\bmp.png" />
+    <Content Include="icons\Px48\c.png" />
+    <Content Include="icons\Px48\cpp.png" />
+    <Content Include="icons\Px48\css.png" />
+    <Content Include="icons\Px48\dat.png" />
+    <Content Include="icons\Px48\dmg.png" />
+    <Content Include="icons\Px48\doc.png" />
+    <Content Include="icons\Px48\dotx.png" />
+    <Content Include="icons\Px48\dwg.png" />
+    <Content Include="icons\Px48\dxf.png" />
+    <Content Include="icons\Px48\eps.png" />
+    <Content Include="icons\Px48\exe.png" />
+    <Content Include="icons\Px48\flv.png" />
+    <Content Include="icons\Px48\gif.png" />
+    <Content Include="icons\Px48\h.png" />
+    <Content Include="icons\Px48\hpp.png" />
+    <Content Include="icons\Px48\html.png" />
+    <Content Include="icons\Px48\ics.png" />
+    <Content Include="icons\Px48\iso.png" />
+    <Content Include="icons\Px48\java.png" />
+    <Content Include="icons\Px48\jpg.png" />
+    <Content Include="icons\Px48\js.png" />
+    <Content Include="icons\Px48\key.png" />
+    <Content Include="icons\Px48\less.png" />
+    <Content Include="icons\Px48\mid.png" />
+    <Content Include="icons\Px48\mp3.png" />
+    <Content Include="icons\Px48\mp4.png" />
+    <Content Include="icons\Px48\mpg.png" />
+    <Content Include="icons\Px48\odf.png" />
+    <Content Include="icons\Px48\ods.png" />
+    <Content Include="icons\Px48\odt.png" />
+    <Content Include="icons\Px48\otp.png" />
+    <Content Include="icons\Px48\ots.png" />
+    <Content Include="icons\Px48\ott.png" />
+    <Content Include="icons\Px48\pdf.png" />
+    <Content Include="icons\Px48\php.png" />
+    <Content Include="icons\Px48\png.png" />
+    <Content Include="icons\Px48\ppt.png" />
+    <Content Include="icons\Px48\psd.png" />
+    <Content Include="icons\Px48\py.png" />
+    <Content Include="icons\Px48\qt.png" />
+    <Content Include="icons\Px48\rar.png" />
+    <Content Include="icons\Px48\rb.png" />
+    <Content Include="icons\Px48\rtf.png" />
+    <Content Include="icons\Px48\sass.png" />
+    <Content Include="icons\Px48\scss.png" />
+    <Content Include="icons\Px48\sql.png" />
+    <Content Include="icons\Px48\tga.png" />
+    <Content Include="icons\Px48\tgz.png" />
+    <Content Include="icons\Px48\tiff.png" />
+    <Content Include="icons\Px48\txt.png" />
+    <Content Include="icons\Px48\wav.png" />
+    <Content Include="icons\Px48\xls.png" />
+    <Content Include="icons\Px48\xlsx.png" />
+    <Content Include="icons\Px48\xml.png" />
+    <Content Include="icons\Px48\yml.png" />
+    <Content Include="icons\Px48\zip.png" />
+    <Content Include="icons\Px48\_blank.png" />
+    <Content Include="icons\Px48\_page.png" />
+    <Content Include="icons\Px512\aac.png" />
+    <Content Include="icons\Px512\ai.png" />
+    <Content Include="icons\Px512\aiff.png" />
+    <Content Include="icons\Px512\avi.png" />
+    <Content Include="icons\Px512\bmp.png" />
+    <Content Include="icons\Px512\c.png" />
+    <Content Include="icons\Px512\cpp.png" />
+    <Content Include="icons\Px512\css.png" />
+    <Content Include="icons\Px512\dat.png" />
+    <Content Include="icons\Px512\dmg.png" />
+    <Content Include="icons\Px512\doc.png" />
+    <Content Include="icons\Px512\dotx.png" />
+    <Content Include="icons\Px512\dwg.png" />
+    <Content Include="icons\Px512\dxf.png" />
+    <Content Include="icons\Px512\eps.png" />
+    <Content Include="icons\Px512\exe.png" />
+    <Content Include="icons\Px512\flv.png" />
+    <Content Include="icons\Px512\gif.png" />
+    <Content Include="icons\Px512\h.png" />
+    <Content Include="icons\Px512\hpp.png" />
+    <Content Include="icons\Px512\html.png" />
+    <Content Include="icons\Px512\ics.png" />
+    <Content Include="icons\Px512\iso.png" />
+    <Content Include="icons\Px512\java.png" />
+    <Content Include="icons\Px512\jpg.png" />
+    <Content Include="icons\Px512\js.png" />
+    <Content Include="icons\Px512\key.png" />
+    <Content Include="icons\Px512\less.png" />
+    <Content Include="icons\Px512\mid.png" />
+    <Content Include="icons\Px512\mp3.png" />
+    <Content Include="icons\Px512\mp4.png" />
+    <Content Include="icons\Px512\mpg.png" />
+    <Content Include="icons\Px512\odf.png" />
+    <Content Include="icons\Px512\ods.png" />
+    <Content Include="icons\Px512\odt.png" />
+    <Content Include="icons\Px512\otp.png" />
+    <Content Include="icons\Px512\ots.png" />
+    <Content Include="icons\Px512\ott.png" />
+    <Content Include="icons\Px512\pdf.png" />
+    <Content Include="icons\Px512\php.png" />
+    <Content Include="icons\Px512\png.png" />
+    <Content Include="icons\Px512\ppt.png" />
+    <Content Include="icons\Px512\psd.png" />
+    <Content Include="icons\Px512\py.png" />
+    <Content Include="icons\Px512\qt.png" />
+    <Content Include="icons\Px512\rar.png" />
+    <Content Include="icons\Px512\rb.png" />
+    <Content Include="icons\Px512\rtf.png" />
+    <Content Include="icons\Px512\sass.png" />
+    <Content Include="icons\Px512\scss.png" />
+    <Content Include="icons\Px512\sql.png" />
+    <Content Include="icons\Px512\tga.png" />
+    <Content Include="icons\Px512\tgz.png" />
+    <Content Include="icons\Px512\tiff.png" />
+    <Content Include="icons\Px512\txt.png" />
+    <Content Include="icons\Px512\wav.png" />
+    <Content Include="icons\Px512\xls.png" />
+    <Content Include="icons\Px512\xlsx.png" />
+    <Content Include="icons\Px512\xml.png" />
+    <Content Include="icons\Px512\yml.png" />
+    <Content Include="icons\Px512\zip.png" />
+    <Content Include="icons\Px512\_blank.png" />
+    <Content Include="icons\Px512\_page.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

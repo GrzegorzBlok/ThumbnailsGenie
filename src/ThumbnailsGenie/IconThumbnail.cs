@@ -5,9 +5,9 @@ namespace ThumbnailsGenie
 {
     public class IconThumbnail
     {
-        private Icons iconsStorage = new Icons();
+        private readonly Icons iconsStorage = new Icons();
 
-        public byte[] GetThumbnailForMimeType(string mimeType, Thumbnails.Size pxSize = Thumbnails.Size.Px32)
+        public System.Drawing.Bitmap GetThumbnailForMimeType(string mimeType, Thumbnails.Size pxSize = Thumbnails.Size.Px32)
         {
             try
             {
@@ -21,7 +21,7 @@ namespace ThumbnailsGenie
             }    
         }
 
-        public byte[] GetThumbnailForExtension(string extension, Thumbnails.Size pxSize = Thumbnails.Size.Px32)
+        public System.Drawing.Bitmap GetThumbnailForExtension(string extension, Thumbnails.Size pxSize = Thumbnails.Size.Px32)
         {
             try
             {
