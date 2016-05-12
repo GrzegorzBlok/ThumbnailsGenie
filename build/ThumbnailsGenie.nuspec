@@ -5,17 +5,16 @@
         <version>1.0.0</version>
         <authors>Grzegorz Blok</authors>
         <owners>Grzegorz Blok</owners>
-		<licenseUrl>https://github.com/GrzegorzBlok/ThumbnailsGenie/blob/master/LICENSE</licenseUrl>
+        <licenseUrl>https://github.com/GrzegorzBlok/ThumbnailsGenie/blob/master/LICENSE</licenseUrl>
         <projectUrl>https://github.com/GrzegorzBlok/ThumbnailsGenie</projectUrl>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
-		<tags>thumbnails icons image resize</tags>
+        <tags>thumbnails icons image resize</tags>
         <description>Creates thumbnails from images and several other file types (e.g. pdf, doc, xls). Images are resized and other file types are given proper, nice looking icon.</description>
         <dependencies>
             <dependency id="MediaTypeMap" version="2.1.0.0" />
         </dependencies>
     </metadata>
     <files>
-        <file src="..\icons\**\*.*" target="icons" />
         <file src="..\src\ThumbnailsGenie\bin\Release\ThumbnailsGenie.dll" target="lib\ThumbnailsGenie.dll" />
     </files>
 </package>
