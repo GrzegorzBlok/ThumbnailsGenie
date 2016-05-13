@@ -103,6 +103,7 @@
   <ItemGroup>
     <None Include="icons\README.md" />
     <None Include="packages.config" />
+    <None Include="Resources\e72d91ab7a7f4867b88bb70826fdc797" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="icons\Px16\aac.png" />

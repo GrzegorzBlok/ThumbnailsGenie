@@ -7,11 +7,11 @@ namespace ThumbnailsGenie
     {
         private readonly Icons iconsStorage = new Icons();
 
-        public System.Drawing.Bitmap GetThumbnailForMimeType(string mimeType, Thumbnails.Size pxSize = Thumbnails.Size.Px32)
+        public byte[] GetThumbnailForMimeType(string mimeType, Thumbnails.Size pxSize = Thumbnails.Size.Px32)
         {
             try
             {
-                var extension = MimeTypeMap.GetExtension(mimeType);
+                var extension = MimeTypeMap.GetExtension(mimeType).Replace(".", "");
  
                 return iconsStorage.GetIcon(extension, pxSize);
             }
@@ -21,7 +21,7 @@ namespace ThumbnailsGenie
             }    
         }
 
-        public System.Drawing.Bitmap GetThumbnailForExtension(string extension, Thumbnails.Size pxSize = Thumbnails.Size.Px32)
+        public byte[] GetThumbnailForExtension(string extension, Thumbnails.Size pxSize = Thumbnails.Size.Px32)
         {
             try
             {

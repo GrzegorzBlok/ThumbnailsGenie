@@ -34,7 +34,7 @@ namespace Tests
             var tiffIcon = target.GetThumbnailForMimeType("image/tiff", size);
             var gifIcon = target.GetThumbnailForMimeType("image/gif", size);
             var blankIcon = target.GetThumbnailForMimeType("blank", size);
-
+ 
             // Assert
             CheckImageIcon(blankIcon, (int)size);
             CheckImageIcon(pngIcon, (int)size);
@@ -44,11 +44,13 @@ namespace Tests
             CheckImageIcon(gifIcon, (int)size);
         }
 
-        static void CheckImageIcon(System.Drawing.Bitmap icon, int size)
+        static void CheckImageIcon(byte[] icon, int size)
         {
             Assert.NotNull(icon);
-            Assert.Equal(size, icon.Height);
-            Assert.Equal(size, icon.Width);
+            var ms = new System.IO.MemoryStream(icon);
+            var img = Image.FromStream(ms, true, true);
+            Assert.Equal(size, img.Height);
+            Assert.Equal(size, img.Width);
         }
     }
 }

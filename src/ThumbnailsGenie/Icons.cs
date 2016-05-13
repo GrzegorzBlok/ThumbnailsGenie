@@ -20,13 +20,13 @@ namespace ThumbnailsGenie
 
         Dictionary<Thumbnails.Size, System.Resources.ResourceManager> IconsData = new Dictionary<Thumbnails.Size, System.Resources.ResourceManager>(Enum.GetNames(typeof(Thumbnails.Size)).Length);
 
-        public System.Drawing.Bitmap GetIcon(string type, Thumbnails.Size size)
+        public byte[] GetIcon(string type, Thumbnails.Size size)
         {
-            var icon = IconsData[size].GetObject(type) as System.Drawing.Bitmap;
+            var icon = IconsData[size].GetObject(type) as byte[];
 
             if (icon == null)
             {
-                return IconsData[size].GetObject(BLANK) as System.Drawing.Bitmap;
+                return IconsData[size].GetObject(BLANK) as byte[];
             }
 
             return icon;
