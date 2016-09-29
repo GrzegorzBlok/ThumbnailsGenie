@@ -4,7 +4,7 @@ ThumbnailsGenie is a library that generates thumbnails from images and several o
 
 File icons are embedded into assembly so the library is suited for the server usage. It does not use any windows explorer API.
 
-## Install
+## Install [![NuGet](https://img.shields.io/nuget/v/ThumbnailsGenie.svg?style=flat)](https://www.nuget.org/packages/ThumbnailsGenie/)
 Add To project via NuGet:  
 1. Right click on a project and click 'Manage NuGet Packages'.  
 2. Search for 'ThumbnailsGenie' and click 'Install'.  
