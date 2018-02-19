@@ -28,13 +28,15 @@ namespace Tests
             var target = new IconThumbnail();
 
             // Act
+            var blankIcon = target.GetThumbnailForMimeType("blank", size);
             var pngIcon = target.GetThumbnailForMimeType("image/png", size);
             var jpegIcon = target.GetThumbnailForMimeType("image/jpeg", size);
             var bmpIcon = target.GetThumbnailForMimeType("image/bmp", size);
             var tiffIcon = target.GetThumbnailForMimeType("image/tiff", size);
             var gifIcon = target.GetThumbnailForMimeType("image/gif", size);
-            var blankIcon = target.GetThumbnailForMimeType("blank", size);
- 
+            var xlsxIcon = target.GetThumbnailForMimeType("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", size);
+            var xlsmIcon = target.GetThumbnailForMimeType("application/vnd.ms-excel.sheet.macroEnabled.12", size);
+
             // Assert
             CheckImageIcon(blankIcon, (int)size);
             CheckImageIcon(pngIcon, (int)size);
@@ -42,6 +44,8 @@ namespace Tests
             CheckImageIcon(bmpIcon, (int)size);
             CheckImageIcon(tiffIcon, (int)size);
             CheckImageIcon(gifIcon, (int)size);
+            CheckImageIcon(xlsxIcon, (int)size);
+            CheckImageIcon(xlsmIcon, (int)size);
         }
 
         static void CheckImageIcon(byte[] icon, int size)

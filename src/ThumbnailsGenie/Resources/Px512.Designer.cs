@@ -19,7 +19,7 @@ namespace ThumbnailsGenie.Resources {
     // class via a tool like ResGen or Visual Studio.
     // To add or remove a member, edit your .ResX file then rerun ResGen
     // with the /str option, or rebuild your VS project.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "4.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Px512 {
@@ -61,7 +61,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] _blank {
             get {
@@ -71,7 +71,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] _page {
             get {
@@ -81,7 +81,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] aac {
             get {
@@ -91,7 +91,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] ai {
             get {
@@ -101,7 +101,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] aiff {
             get {
@@ -111,7 +111,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] avi {
             get {
@@ -121,7 +121,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] bmp {
             get {
@@ -131,7 +131,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] c {
             get {
@@ -141,7 +141,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] cpp {
             get {
@@ -151,7 +151,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] css {
             get {
@@ -161,7 +161,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] dat {
             get {
@@ -171,7 +171,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] dmg {
             get {
@@ -181,7 +181,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] doc {
             get {
@@ -191,7 +191,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] dotx {
             get {
@@ -201,7 +201,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] dwg {
             get {
@@ -211,7 +211,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] dxf {
             get {
@@ -221,7 +221,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] eps {
             get {
@@ -231,7 +231,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] exe {
             get {
@@ -241,7 +241,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] flv {
             get {
@@ -251,7 +251,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] gif {
             get {
@@ -261,7 +261,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] h {
             get {
@@ -271,7 +271,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] hpp {
             get {
@@ -281,7 +281,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] html {
             get {
@@ -291,7 +291,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] ics {
             get {
@@ -301,7 +301,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] iso {
             get {
@@ -311,7 +311,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] java {
             get {
@@ -321,7 +321,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] jpg {
             get {
@@ -331,7 +331,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] js {
             get {
@@ -341,7 +341,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] key {
             get {
@@ -351,7 +351,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] less {
             get {
@@ -361,7 +361,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] mid {
             get {
@@ -371,7 +371,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] mp3 {
             get {
@@ -381,7 +381,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] mp4 {
             get {
@@ -391,7 +391,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] mpg {
             get {
@@ -401,7 +401,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] odf {
             get {
@@ -411,7 +411,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] ods {
             get {
@@ -421,7 +421,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] odt {
             get {
@@ -431,7 +431,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] otp {
             get {
@@ -441,7 +441,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] ots {
             get {
@@ -451,7 +451,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] ott {
             get {
@@ -461,7 +461,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] pdf {
             get {
@@ -471,7 +471,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] php {
             get {
@@ -481,7 +481,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] png {
             get {
@@ -491,7 +491,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] ppt {
             get {
@@ -501,7 +501,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] psd {
             get {
@@ -511,7 +511,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] py {
             get {
@@ -521,7 +521,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] qt {
             get {
@@ -531,7 +531,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] rar {
             get {
@@ -541,7 +541,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] rb {
             get {
@@ -551,7 +551,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] rtf {
             get {
@@ -561,7 +561,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] sass {
             get {
@@ -571,7 +571,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] scss {
             get {
@@ -581,7 +581,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] sql {
             get {
@@ -591,7 +591,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] tga {
             get {
@@ -601,7 +601,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] tgz {
             get {
@@ -611,7 +611,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] tiff {
             get {
@@ -621,7 +621,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] txt {
             get {
@@ -631,7 +631,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] wav {
             get {
@@ -641,7 +641,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] xls {
             get {
@@ -651,7 +651,17 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
+        /// </summary>
+        internal static byte[] xlsm {
+            get {
+                object obj = ResourceManager.GetObject("xlsm", resourceCulture);
+                return ((byte[])(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] xlsx {
             get {
@@ -661,7 +671,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] xml {
             get {
@@ -671,7 +681,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] yml {
             get {
@@ -681,7 +691,7 @@ namespace ThumbnailsGenie.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized resource of type byte[].
+        ///   Looks up a localized resource of type System.Byte[].
         /// </summary>
         internal static byte[] zip {
             get {

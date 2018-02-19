@@ -12,7 +12,7 @@ namespace ThumbnailsGenie
             try
             {
                 var extension = MimeTypeMap.GetExtension(mimeType).Replace(".", "");
- 
+
                 return iconsStorage.GetIcon(extension, pxSize);
             }
             catch (Exception)

@@ -1,0 +1,4 @@
+/src/packages/*
+*/*/bin/Debug/*
+/*/*/obj/Debug/*
+/src/.vs/ThumbnailsGenie/v15/*

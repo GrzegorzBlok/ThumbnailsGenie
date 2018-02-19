@@ -164,6 +164,7 @@
     <Content Include="icons\Px16\wav.png" />
     <Content Include="icons\Px16\xls.png" />
     <Content Include="icons\Px16\xlsx.png" />
+    <Content Include="icons\Px16\xlsm.png" />
     <Content Include="icons\Px16\xml.png" />
     <Content Include="icons\Px16\yml.png" />
     <Content Include="icons\Px16\zip.png" />
@@ -227,6 +228,7 @@
     <Content Include="icons\Px32\wav.png" />
     <Content Include="icons\Px32\xls.png" />
     <Content Include="icons\Px32\xlsx.png" />
+    <Content Include="icons\Px32\xlsm.png" />
     <Content Include="icons\Px32\xml.png" />
     <Content Include="icons\Px32\yml.png" />
     <Content Include="icons\Px32\zip.png" />
@@ -290,6 +292,7 @@
     <Content Include="icons\Px48\wav.png" />
     <Content Include="icons\Px48\xls.png" />
     <Content Include="icons\Px48\xlsx.png" />
+    <Content Include="icons\Px48\xlsm.png" />
     <Content Include="icons\Px48\xml.png" />
     <Content Include="icons\Px48\yml.png" />
     <Content Include="icons\Px48\zip.png" />
@@ -353,6 +356,7 @@
     <Content Include="icons\Px512\wav.png" />
     <Content Include="icons\Px512\xls.png" />
     <Content Include="icons\Px512\xlsx.png" />
+    <Content Include="icons\Px512\xlsm.png" />
     <Content Include="icons\Px512\xml.png" />
     <Content Include="icons\Px512\yml.png" />
     <Content Include="icons\Px512\zip.png" />
