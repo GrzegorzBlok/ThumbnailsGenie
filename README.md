@@ -53,7 +53,7 @@ var ms = new MemoryStream();
 
 using (var imageStream = new FileStream("pic.jpg", FileMode.Open, FileAccess.Read, FileShare.Read))
 {
-  new ImageThumbnail(, Thumbnails.Size.Px512).SaveToStream(ms);
+  new ImageThumbnail(imageStream, Thumbnails.Size.Px512).SaveToStream(ms);
 }
 
 ```
