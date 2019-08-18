@@ -11,7 +11,7 @@ namespace Tests
         [InlineData(Thumbnails.Size.Px48)]
         [InlineData(Thumbnails.Size.Px32)]
         [InlineData(Thumbnails.Size.Px16)]
-        public void GetThumbnailMimeTypeReturnsProperIcon_Px(Thumbnails.Size size)
+        public void GetThumbnailReturnsProperIconForKnownMimeType(Thumbnails.Size size)
         {
             var target = new IconThumbnail();
             var blankIcon = target.GetThumbnailForMimeType("blank", size);
@@ -44,13 +44,68 @@ namespace Tests
         [InlineData(Thumbnails.Size.Px48)]
         [InlineData(Thumbnails.Size.Px32)]
         [InlineData(Thumbnails.Size.Px16)]
-        public void GetThumbnailMimeTypeReturnsBlankIconForUnknownType(Thumbnails.Size size)
+        public void GetThumbnailReturnsBlankIconForUnknownMimeType(Thumbnails.Size size)
         {
             var target = new IconThumbnail();
             var blankIcon = target.GetThumbnailForMimeType("blank", size);
 
             // Act
             var icon = target.GetThumbnailForMimeType("noppe/popnee", size);
+
+            // Assert
+            Assert.NotNull(icon);
+            var ms = new System.IO.MemoryStream(icon);
+            var img = Image.FromStream(ms, true, true);
+            Assert.Equal((int)size, img.Height);
+            Assert.Equal((int)size, img.Width);
+            Assert.Equal(blankIcon, icon);
+        }
+
+        [Theory]
+        [InlineData(Thumbnails.Size.Px512)]
+        [InlineData(Thumbnails.Size.Px48)]
+        [InlineData(Thumbnails.Size.Px32)]
+        [InlineData(Thumbnails.Size.Px16)]
+        public void GetThumbnailReturnsProperIconForKnownExtension(Thumbnails.Size size)
+        {
+            var target = new IconThumbnail();
+            var blankIcon = target.GetThumbnailForMimeType("blank", size);
+
+            // Act
+            var pngIcon = target.GetThumbnailForExtension("png", size);
+            var jpgIcon = target.GetThumbnailForExtension("jpg", size);
+            var bmpIcon = target.GetThumbnailForExtension("bmp", size);
+            var tiffIcon = target.GetThumbnailForExtension("tiff", size);
+            var gifIcon = target.GetThumbnailForExtension("gif", size);
+            var xlsxIcon = target.GetThumbnailForExtension("xlsx", size);
+            var xlsmIcon = target.GetThumbnailForExtension("xlsm", size);
+            var csvIcon = target.GetThumbnailForExtension("csv", size);
+            var apkIcon = target.GetThumbnailForExtension("apk", size);
+
+            // Assert
+            CheckImageIcon(pngIcon, (int)size, blankIcon);
+            CheckImageIcon(jpgIcon, (int)size, blankIcon);
+            CheckImageIcon(bmpIcon, (int)size, blankIcon);
+            CheckImageIcon(tiffIcon, (int)size, blankIcon);
+            CheckImageIcon(gifIcon, (int)size, blankIcon);
+            CheckImageIcon(xlsxIcon, (int)size, blankIcon);
+            CheckImageIcon(xlsmIcon, (int)size, blankIcon);
+            CheckImageIcon(csvIcon, (int)size, blankIcon);
+            CheckImageIcon(apkIcon, (int)size, blankIcon);
+        }
+
+        [Theory]
+        [InlineData(Thumbnails.Size.Px512)]
+        [InlineData(Thumbnails.Size.Px48)]
+        [InlineData(Thumbnails.Size.Px32)]
+        [InlineData(Thumbnails.Size.Px16)]
+        public void GetThumbnailReturnsBlankIconForUnknownExtension(Thumbnails.Size size)
+        {
+            var target = new IconThumbnail();
+            var blankIcon = target.GetThumbnailForMimeType("blank", size);
+
+            // Act
+            var icon = target.GetThumbnailForExtension("gooooofy", size);
 
             // Assert
             Assert.NotNull(icon);
