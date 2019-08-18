@@ -5,6 +5,8 @@
     <AssemblyTitle>ThumbnailsGenie</AssemblyTitle>
     <Product>ThumbnailsGenie</Product>
     <Copyright>Copyright ©  2016</Copyright>
+    <Version>2.0.1</Version>
+    <AssemblyVersion>2.0.1.0</AssemblyVersion>
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="MediaTypeMap.Core" Version="2.3.3" />

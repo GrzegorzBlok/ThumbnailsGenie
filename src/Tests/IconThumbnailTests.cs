@@ -11,12 +11,12 @@ namespace Tests
         [InlineData(Thumbnails.Size.Px48)]
         [InlineData(Thumbnails.Size.Px32)]
         [InlineData(Thumbnails.Size.Px16)]
-        public void GetThumbnailForImageReturnsProperIcon_Px(Thumbnails.Size size)
+        public void GetThumbnailMimeTypeReturnsProperIcon_Px(Thumbnails.Size size)
         {
             var target = new IconThumbnail();
+            var blankIcon = target.GetThumbnailForMimeType("blank", size);
 
             // Act
-            var blankIcon = target.GetThumbnailForMimeType("blank", size);
             var pngIcon = target.GetThumbnailForMimeType("image/png", size);
             var jpegIcon = target.GetThumbnailForMimeType("image/jpeg", size);
             var bmpIcon = target.GetThumbnailForMimeType("image/bmp", size);
@@ -24,25 +24,51 @@ namespace Tests
             var gifIcon = target.GetThumbnailForMimeType("image/gif", size);
             var xlsxIcon = target.GetThumbnailForMimeType("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet", size);
             var xlsmIcon = target.GetThumbnailForMimeType("application/vnd.ms-excel.sheet.macroEnabled.12", size);
+            var csvIcon = target.GetThumbnailForMimeType("text/csv", size);
+            var apkIcon = target.GetThumbnailForMimeType("application/vnd.android.package-archive", size);
 
             // Assert
-            CheckImageIcon(blankIcon, (int)size);
-            CheckImageIcon(pngIcon, (int)size);
-            CheckImageIcon(jpegIcon, (int)size);
-            CheckImageIcon(bmpIcon, (int)size);
-            CheckImageIcon(tiffIcon, (int)size);
-            CheckImageIcon(gifIcon, (int)size);
-            CheckImageIcon(xlsxIcon, (int)size);
-            CheckImageIcon(xlsmIcon, (int)size);
+            CheckImageIcon(pngIcon, (int)size, blankIcon);
+            CheckImageIcon(jpegIcon, (int)size, blankIcon);
+            CheckImageIcon(bmpIcon, (int)size, blankIcon);
+            CheckImageIcon(tiffIcon, (int)size, blankIcon);
+            CheckImageIcon(gifIcon, (int)size, blankIcon);
+            CheckImageIcon(xlsxIcon, (int)size, blankIcon);
+            CheckImageIcon(xlsmIcon, (int)size, blankIcon);
+            CheckImageIcon(csvIcon, (int)size, blankIcon);
+            CheckImageIcon(apkIcon, (int)size, blankIcon);
         }
 
-        static void CheckImageIcon(byte[] icon, int size)
+        [Theory]
+        [InlineData(Thumbnails.Size.Px512)]
+        [InlineData(Thumbnails.Size.Px48)]
+        [InlineData(Thumbnails.Size.Px32)]
+        [InlineData(Thumbnails.Size.Px16)]
+        public void GetThumbnailMimeTypeReturnsBlankIconForUnknownType(Thumbnails.Size size)
+        {
+            var target = new IconThumbnail();
+            var blankIcon = target.GetThumbnailForMimeType("blank", size);
+
+            // Act
+            var icon = target.GetThumbnailForMimeType("noppe/popnee", size);
+
+            // Assert
+            Assert.NotNull(icon);
+            var ms = new System.IO.MemoryStream(icon);
+            var img = Image.FromStream(ms, true, true);
+            Assert.Equal((int)size, img.Height);
+            Assert.Equal((int)size, img.Width);
+            Assert.Equal(blankIcon, icon);
+        }
+
+        static void CheckImageIcon(byte[] icon, int size, byte[] blankIcon)
         {
             Assert.NotNull(icon);
             var ms = new System.IO.MemoryStream(icon);
             var img = Image.FromStream(ms, true, true);
             Assert.Equal(size, img.Height);
             Assert.Equal(size, img.Width);
+            Assert.NotEqual(blankIcon, icon);
         }
     }
 }
