@@ -316,4 +316,25 @@
   <data name="csv" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\icons\Px48\csv.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="docx" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\Px48\docx.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="epub" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\Px48\epub.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="kf8" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\Px48\kf8.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mobi" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\Px48\mobi.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ipa" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\Px48\ipa.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="mov" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\Px48\mov.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="psb" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\icons\Px48\psb.png;System.Byte[], mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
