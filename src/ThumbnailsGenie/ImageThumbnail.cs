@@ -21,9 +21,8 @@ namespace ThumbnailsGenie
 
         protected static Image GenerateThumbnail(Image img, Thumbnails.Size maxPxSize)
         {
-            Size thumbnailSize = GetThumbnailSize(img, Thumbnails.Size.Px32);
-            return img.GetThumbnailImage(thumbnailSize.Width,
-                thumbnailSize.Height, null, IntPtr.Zero);
+            Size thumbnailSize = GetThumbnailSize(img, maxPxSize);
+            return img.GetThumbnailImage(thumbnailSize.Width, thumbnailSize.Height, null, IntPtr.Zero);
         }
 
         protected static Size GetThumbnailSize(Image original, Thumbnails.Size maxPxSize)

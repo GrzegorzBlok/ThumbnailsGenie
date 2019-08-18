@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Xunit;
+﻿using Xunit;
 using ThumbnailsGenie;
 using System.Drawing;
 
@@ -11,18 +6,11 @@ namespace Tests
 {
     public class IconThumbnailTests
     {
-        [Fact]
-        public void GetThumbnailForImageReturnsProperIcon_Px32()
-        {
-            GetThumbnailForImageReturnsProperIcon_Px(Thumbnails.Size.Px32);
-        }
-
-        [Fact]
-        public void GetThumbnailForImageReturnsProperIcon_Px512()
-        {
-            GetThumbnailForImageReturnsProperIcon_Px(Thumbnails.Size.Px512);
-        }
-
+        [Theory]
+        [InlineData(Thumbnails.Size.Px512)]
+        [InlineData(Thumbnails.Size.Px48)]
+        [InlineData(Thumbnails.Size.Px32)]
+        [InlineData(Thumbnails.Size.Px16)]
         public void GetThumbnailForImageReturnsProperIcon_Px(Thumbnails.Size size)
         {
             var target = new IconThumbnail();

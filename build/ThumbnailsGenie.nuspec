@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
     <metadata>
         <id>ThumbnailsGenie</id>
-        <version>1.0.0</version>
+        <version>2.0.0</version>
         <authors>Grzegorz Blok</authors>
         <owners>Grzegorz Blok</owners>
         <licenseUrl>https://github.com/GrzegorzBlok/ThumbnailsGenie/blob/master/LICENSE</licenseUrl>
@@ -11,10 +11,13 @@
         <tags>thumbnails icons image resize</tags>
         <description>Creates thumbnails from images and several other file types (e.g. pdf, doc, xls). Images are resized and other file types are given proper, nice looking icon.</description>
         <dependencies>
-            <dependency id="MediaTypeMap" version="2.1.0.0" />
+            <group targetFramework=".NETStandard2.0">
+                <dependency id="MediaTypeMap.Core" version="2.3.3" />
+                <dependency id="System.Drawing.Common" version="4.5.1" />
+            </group>
         </dependencies>
     </metadata>
     <files>
-        <file src="..\src\ThumbnailsGenie\bin\Release\ThumbnailsGenie.dll" target="lib\ThumbnailsGenie.dll" />
+        <file src="..\src\ThumbnailsGenie\bin\Release\netstandard2.0\ThumbnailsGenie.dll" target="lib\netstandard2.0\ThumbnailsGenie.dll" />
     </files>
 </package>

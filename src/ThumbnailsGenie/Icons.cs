@@ -1,7 +1,5 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.IO;
-using System.Configuration;
 using ThumbnailsGenie.Resources;
 
 namespace ThumbnailsGenie
