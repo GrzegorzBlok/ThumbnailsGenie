@@ -8,6 +8,10 @@ namespace Tests
     {
         [Theory]
         [InlineData(Thumbnails.Size.Px512)]
+        [InlineData(Thumbnails.Size.Px256)]
+        [InlineData(Thumbnails.Size.Px128)]
+        [InlineData(Thumbnails.Size.Px96)]
+        [InlineData(Thumbnails.Size.Px64)]
         [InlineData(Thumbnails.Size.Px48)]
         [InlineData(Thumbnails.Size.Px32)]
         [InlineData(Thumbnails.Size.Px16)]
@@ -41,6 +45,10 @@ namespace Tests
 
         [Theory]
         [InlineData(Thumbnails.Size.Px512)]
+        [InlineData(Thumbnails.Size.Px256)]
+        [InlineData(Thumbnails.Size.Px128)]
+        [InlineData(Thumbnails.Size.Px96)]
+        [InlineData(Thumbnails.Size.Px64)]
         [InlineData(Thumbnails.Size.Px48)]
         [InlineData(Thumbnails.Size.Px32)]
         [InlineData(Thumbnails.Size.Px16)]
@@ -63,6 +71,10 @@ namespace Tests
 
         [Theory]
         [InlineData(Thumbnails.Size.Px512)]
+        [InlineData(Thumbnails.Size.Px256)]
+        [InlineData(Thumbnails.Size.Px128)]
+        [InlineData(Thumbnails.Size.Px96)]
+        [InlineData(Thumbnails.Size.Px64)]
         [InlineData(Thumbnails.Size.Px48)]
         [InlineData(Thumbnails.Size.Px32)]
         [InlineData(Thumbnails.Size.Px16)]
@@ -96,6 +108,10 @@ namespace Tests
 
         [Theory]
         [InlineData(Thumbnails.Size.Px512)]
+        [InlineData(Thumbnails.Size.Px256)]
+        [InlineData(Thumbnails.Size.Px128)]
+        [InlineData(Thumbnails.Size.Px96)]
+        [InlineData(Thumbnails.Size.Px64)]
         [InlineData(Thumbnails.Size.Px48)]
         [InlineData(Thumbnails.Size.Px32)]
         [InlineData(Thumbnails.Size.Px16)]
