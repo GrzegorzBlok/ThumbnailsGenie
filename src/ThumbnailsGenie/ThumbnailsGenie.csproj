@@ -1,17 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 	<PropertyGroup>
 		<ProjectGuid>{9E9BE10E-0E1F-4B4D-B4F1-AFA51154AA96}</ProjectGuid>
-		<TargetFramework>netstandard2.0</TargetFramework>
+		<TargetFramework>net7.0</TargetFramework>
 		<AssemblyTitle>ThumbnailsGenie</AssemblyTitle>
 		<Product>ThumbnailsGenie</Product>
-		<Copyright>Copyright ©  2016</Copyright>
-		<Version>2.0.2</Version>
-		<AssemblyVersion>2.0.2.0</AssemblyVersion>
+		<Copyright>Copyright ©  2023</Copyright>
+		<Version>2.0.3</Version>
+		<AssemblyVersion>2.0.3.0</AssemblyVersion>
 	</PropertyGroup>
 	<ItemGroup>
 		<PackageReference Include="MediaTypeMap.Core" Version="2.3.3" />
 		<PackageReference Include="Microsoft.CSharp" Version="4.*" />
-		<PackageReference Include="System.Drawing.Common" Version="4.5.1" />
+		<PackageReference Include="System.Drawing.Common" Version="7.0.0" />
 	</ItemGroup>
 	<ItemGroup>
 		<Compile Update="Properties\Resources.Designer.cs">
