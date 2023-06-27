@@ -13,6 +13,10 @@ namespace ThumbnailsGenie
             Px16 = 16,
             Px32 = 32,
             Px48 = 48,
+            Px64 = 64,
+            Px96 = 96,
+            Px128 = 128,
+            Px256 = 256,
             Px512 = 512
         }
     }
